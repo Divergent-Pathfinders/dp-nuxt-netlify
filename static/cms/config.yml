@@ -32,7 +32,7 @@ collections:
     files:
       - label: "Index page"
         name: "index"
-        file: "src/data/pages/index.yml"
+        file: "content/pages/index.yml"
         fields: 
           - {label: Title, name: title, widget: string}
           - {label: Strapline, name: strapline, widget: string}
