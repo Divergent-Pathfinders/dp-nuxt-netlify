@@ -30,11 +30,20 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Index page"
+      - label: "All pages"
+        name: "all"
+        file: "content/pages/all.yml"
+        fields: 
+          - {label: "Site Title", name: "sitetitle", widget: "string"}
+          - {label: "Strapline", name: "strapline", widget: "string"}
+      - label: "Index page config"
         name: "index"
         file: "content/pages/index.yml"
         fields: 
-          - {label: Title, name: title, widget: string}
-          - {label: Strapline, name: strapline, widget: string}
-          - {label: Explainer, name: explainer, widget: string}
-          - {label: MainBody, name: mainbody, widget: markdown}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Strapline", name: "strapline", widget: "string"}
+          - {label: "Explainer", name: "explainer", widget: "string"}
+                name: "index"
+        file: "content/pages/index-body-1.md"
+        fields: 
+          - {label: Body1, name: body1, widget: "markdown"}
