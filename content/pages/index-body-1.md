@@ -26,7 +26,7 @@ body1: "We're a group of people doing good different at the emerging edges.
   to join, then please sign up to our mailing list for updates.
 
 
-  Who is this for?\r
+  ## Who is this for?\r
 
 
   Divergent Pathfinders is a space for people who have two qualities which -
@@ -38,7 +38,7 @@ body1: "We're a group of people doing good different at the emerging edges.
   \r
 
 
-  Subtle Divergence\r
+  ### Subtle Divergence\r
 
 
   Subtly divergent people experience the world in significantly different ways
@@ -51,7 +51,7 @@ body1: "We're a group of people doing good different at the emerging edges.
   \r
 
 
-  Compassionate Connection\r
+  ### Compassionate Connection\r
 
 
   Compassionate connectors see the world in a linky, big-picture, intuitive
@@ -63,9 +63,7 @@ body1: "We're a group of people doing good different at the emerging edges.
   themselves and others.\r
 
 
-  \r
-
-  What's next?\r
+  ## \rWhat's next?\r
 
 
   After experimenting with lots of online community platforms, it became
