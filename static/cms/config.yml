@@ -43,7 +43,8 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Strapline", name: "strapline", widget: "string"}
           - {label: "Explainer", name: "explainer", widget: "string"}
-                name: "index"
+      - label: "Index page body - 1st section"
+        name: "index-body-1"
         file: "content/pages/index-body-1.md"
         fields: 
           - {label: Body1, name: body1, widget: "markdown"}
