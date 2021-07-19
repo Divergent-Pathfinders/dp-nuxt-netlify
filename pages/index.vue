@@ -1,6 +1,22 @@
 <template>
-  <NuxtLogo />
+  <div>
+    <p>
+      {{ all }}
+    </p>
+  </div>
 </template>
+
+<script>
+export default {
+  async asyncData ({ $content, params }) {
+    const all = await $content('pages/all').fetch()
+
+    return {
+      all
+    }
+  }
+}
+</script>
 
 <script>
 export default {
