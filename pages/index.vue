@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <article>
     <p>
-      {{ all }}
+      <nuxt-content :document="page" />
     </p>
-  </div>
+  </article>
 </template>
 
 <script>
 export default {
-  async asyncData ({ $content, params }) {
-    const all = await $content('pages/all').fetch()
+  async asyncData ({ $content }) {
+    const page = await $content('pages/index-body-1').fetch()
 
     return {
-      all
+      page
     }
   }
 }
