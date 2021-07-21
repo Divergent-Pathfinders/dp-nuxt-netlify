@@ -8,15 +8,9 @@
 
 <script>
 export default {
-  async asyncData ({ $content, params, error }) {
-    const slug = params.slug || 'index'
-    const page = await $content(slug)
+  async asyncData ({ $content }) {
+    const page = await $content('hello')
       .fetch()
-      /* eslint-disable */
-      .catch(err => {
-        error({ statusCode: 404, message: 'Page not found' })
-      })
-
     return {
       page
     }
