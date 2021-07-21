@@ -82,19 +82,16 @@ collections:
     files:
       - label: "All pages"
         name: "all"
-        file: "content/pages/all.yml"
+        file: "content/all.yml"
         fields: 
           - {label: "Site Title", name: "sitetitle", widget: "string"}
           - {label: "Strapline", name: "strapline", widget: "string"}
       - label: "Index page config"
         name: "index"
-        file: "content/pages/index.yml"
+        file: "content/pages/index.md"
+        format: 'frontmatter'
         fields: 
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Strapline", name: "strapline", widget: "string"}
           - {label: "Explainer", name: "explainer", widget: "string"}
-      - label: "Index page body - 1st section"
-        name: "index-body-1"
-        file: "content/pages/index-body-1.md"
-        fields: 
-          - {label: Body1, name: body1, widget: "markdown"}
+          - {label: Body, name: body, widget: "markdown"}
