@@ -2,9 +2,9 @@
   <div>
     <header>
       <div>
-        <b-navbar toggleable="lg" type="dark" variant="dark">
+        <b-navbar toggleable="lg" type="dark" variant="primary">
           <b-navbar-brand to="/">
-            <img src="icon.png" class="d-inline-block align-mid" alt="Home" width="80px">
+            <img src="icon.png" class="d-inline-block align-mid" :alt="all.strapline" width="80px">
             {{ all.sitetitle }}
           </b-navbar-brand>
           <b-navbar-toggle target="nav-collapse" />
