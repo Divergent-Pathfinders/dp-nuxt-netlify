@@ -3,24 +3,19 @@
     <h1>
       {{ all.sitetitle }}
     </h1>
-    <nuxt-content :document="page1" />
+    <nuxt-content :document="page" />
   </div>
 </template>
 
 <script>
-/* eslint-disable */
 export default {
-  async asyncData ({ $content }) {
-    const page = await $content('pages/index-body-1')
+  async asyncData ({ $content, params }) {
+    const page = await $content('pages/index')
       .fetch()
-    return {
-      page
-    }
-  },
-    async asyncData ({ $content }) {
     const all = await $content('all')
       .fetch()
     return {
+      page,
       all
     }
   },

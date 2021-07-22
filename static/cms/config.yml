@@ -95,3 +95,13 @@ collections:
           - {label: "Strapline", name: "strapline", widget: "string"}
           - {label: "Explainer", name: "explainer", widget: "string"}
           - {label: Body, name: body, widget: "markdown"}
+
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Summary", name: "summary", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
