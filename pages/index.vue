@@ -1,9 +1,18 @@
 <template>
   <div>
-    <h1>
-      {{ all.sitetitle }}
-    </h1>
-    <nuxt-content :document="page" />
+    <div>
+      <b-jumbotron :header="page.headline" :lead="page.strapline">
+        <p>{{ page.explainer }}</p>
+      </b-jumbotron>
+    </div>
+    <div align="center">
+      <b-card
+        style="max-width: 100rem;"
+        align="left"
+      >
+        <nuxt-content :document="page" />
+      </b-card>
+    </div>
   </div>
 </template>
 

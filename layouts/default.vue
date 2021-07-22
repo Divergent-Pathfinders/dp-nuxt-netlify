@@ -2,9 +2,10 @@
   <div>
     <header>
       <div>
-        <b-navbar toggleable="lg" type="dark" variant="primary">
+        <b-navbar toggleable="lg" type="dark" variant="dark">
           <b-navbar-brand to="/">
-            <h1>Test Site</h1>
+            <img src="icon.png" class="d-inline-block align-mid" alt="Home" width="80px">
+            {{ all.sitetitle }}
           </b-navbar-brand>
           <b-navbar-toggle target="nav-collapse" />
           <b-collapse id="nav-collapse" is-nav>
@@ -25,3 +26,16 @@
     <TheFooter />
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      all: []
+    }
+  },
+  async fetch () {
+    this.all = await this.$content('all').fetch()
+  }
+}
+</script>
