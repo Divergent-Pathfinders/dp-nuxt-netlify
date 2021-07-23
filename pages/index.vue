@@ -1,7 +1,16 @@
 <template>
   <div>
-    <div>
-      <b-jumbotron :header="page.headline" :lead="page.strapline">
+    <div style="padding:2rem;" align="center">
+      <b-jumbotron
+        :header="page.headline"
+        :lead="page.strapline"
+        bg-variant="secondary"
+        text-variant="white"
+        border-variant="dark"
+        style="max-width: 100rem;"
+        class="shadow"
+        align="left"
+      >
         <p>{{ page.explainer }}</p>
       </b-jumbotron>
     </div>
