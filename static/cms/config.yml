@@ -26,7 +26,7 @@ collections:
     format: 'frontmatter'
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "livestreams"
     label: "Livestreams"

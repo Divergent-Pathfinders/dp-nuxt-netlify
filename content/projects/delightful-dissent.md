@@ -1,4 +1,4 @@
 ---
 title: Delightful Dissent
-description: "Live-recorded video and podcast. "
 ---
+Live-recorded video and podcast.
