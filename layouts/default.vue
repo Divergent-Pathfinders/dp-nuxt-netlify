@@ -4,7 +4,7 @@
       <div>
         <b-navbar toggleable="lg" type="dark" variant="primary">
           <b-navbar-brand to="/">
-            <img src="icon.png" :alt="all.strapline" width="80px">
+            <img src="/icon.png" :alt="all.strapline" width="80px">
             <span class="h1 m-3 align-middle">{{ all.sitetitle }}</span>
           </b-navbar-brand>
           <!-- <b-navbar-toggle target="nav-collapse" />
