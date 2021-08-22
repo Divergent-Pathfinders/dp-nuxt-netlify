@@ -1,23 +1,22 @@
 <template>
-  <div>
+  <div style="max-width: 100rem;">
     <h1>Projects</h1>
-    <ul>
-      <li v-for="project in projects" :key="project.title">
-        <nuxt-link to="#">
-          {{ project.title }}
-        </nuxt-link>
-      </li>
-      <div align="center">
+    <div align="center">
+      <b-card-group>
         <b-card
           v-for="project in projects"
           :key="project.title"
-          style="max-width: 100rem;"
+          :title="project.title"
+
           align="left"
         >
           <nuxt-content :document="project" />
+          <nuxt-link :to="`projects/${project.slug}`">
+            Find out more about {{ project.title }}
+          </nuxt-link>
         </b-card>
-      </div>
-    </ul>
+      </b-card-group>
+    </div>
   </div>
 </template>
 

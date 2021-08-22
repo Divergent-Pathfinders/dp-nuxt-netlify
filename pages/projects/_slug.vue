@@ -1,5 +1,6 @@
 <template>
   <article>
+    <h1> {{ project.title }} </h1>
     <nuxt-content :document="project" />
   </article>
 </template>
