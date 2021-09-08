@@ -3,6 +3,7 @@ backend:
   repo: Divergent-Pathfinders/dp-nuxt-netlify # Path to your GitHub repository
   open_authoring: true
 
+publish_mode: editorial_workflow
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
