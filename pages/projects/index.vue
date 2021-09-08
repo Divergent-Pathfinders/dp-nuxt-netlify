@@ -1,7 +1,7 @@
 <template>
-  <div style="max-width: 100rem;">
-    <h1>Projects</h1>
-    <div align="center">
+  <div align="center">
+    <div style="max-width: 100rem;" align="left">
+      <h1>Projects</h1>
       <b-card-group>
         <b-card
           v-for="project in projects"
